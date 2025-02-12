@@ -1,0 +1,726 @@
+
+*** Running vivado
+    with args -log mwpe4_ipfpga_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mwpe4_ipfpga_top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source mwpe4_ipfpga_top.tcl -notrace
+Command: synth_design -top mwpe4_ipfpga_top -part xc7k70tfbg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12948 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 362.055 ; gain = 100.871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mwpe4_ipfpga_top' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/mwpe4_ipfpga_top.vhd:102]
+INFO: [Synth 8-3491] module 'clk_gen' declared at 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/clk_gen.vhd:17' bound to instance 'u_clk_gen' of component 'clk_gen' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/mwpe4_ipfpga_top.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'clk_gen' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/clk_gen.vhd:30]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'clkin_buf' to cell 'IBUFG' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/clk_gen.vhd:43]
+INFO: [Synth 8-113] binding component instance 'clkfb_buf' to cell 'BUFG' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/clk_gen.vhd:51]
+INFO: [Synth 8-113] binding component instance 'clkout0_buf' to cell 'BUFG' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/clk_gen.vhd:57]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/clk_gen.vhd:63]
+INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/clk_gen.vhd:69]
+INFO: [Synth 8-113] binding component instance 'clkout3_buf' to cell 'BUFG' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/clk_gen.vhd:75]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 16 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 20.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 16 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 5 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'pll' to cell 'PLLE2_BASE' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/clk_gen.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'clk_gen' (1#1) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/clk_gen.vhd:30]
+INFO: [Synth 8-3491] module 'bp_if_wrap' declared at 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/bp_if_wrap.vhd:16' bound to instance 'u_bp_if_wrap' of component 'bp_if_wrap' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/mwpe4_ipfpga_top.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'bp_if_wrap' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/bp_if_wrap.vhd:45]
+INFO: [Synth 8-637] synthesizing blackbox instance 'u_bp_if_top' of component 'bp_if_top' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/bp_if_wrap.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'bp_if_wrap' (2#1) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/bp_if_wrap.vhd:45]
+INFO: [Synth 8-3491] module 'io_top' declared at 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/io_top.vhd:18' bound to instance 'u_io_top' of component 'io_top' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/mwpe4_ipfpga_top.vhd:255]
+INFO: [Synth 8-638] synthesizing module 'io_top' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/io_top.vhd:87]
+INFO: [Synth 8-3491] module 'ad7357_if' declared at 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/ad7357_if.vhd:18' bound to instance 'u_ad_0_1' of component 'ad7357_if' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/io_top.vhd:309]
+INFO: [Synth 8-638] synthesizing module 'ad7357_if' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/ad7357_if.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'ad7357_if' (3#1) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/ad7357_if.vhd:31]
+INFO: [Synth 8-3491] module 'ad7357_if' declared at 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/ad7357_if.vhd:18' bound to instance 'u_ad_2_3' of component 'ad7357_if' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/io_top.vhd:321]
+INFO: [Synth 8-3491] module 'ad7357_if' declared at 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/ad7357_if.vhd:18' bound to instance 'u_ad_4_5' of component 'ad7357_if' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/io_top.vhd:333]
+INFO: [Synth 8-3491] module 'ad7357_if' declared at 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/ad7357_if.vhd:18' bound to instance 'u_ad_6_7' of component 'ad7357_if' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/io_top.vhd:345]
+INFO: [Synth 8-3491] module 'pwm_if' declared at 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:19' bound to instance 'u_pwm_if' of component 'pwm_if' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/io_top.vhd:383]
+INFO: [Synth 8-638] synthesizing module 'pwm_if' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:44]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:61]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:62]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:74]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:75]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:76]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:77]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:84]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:86]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:87]
+INFO: [Synth 8-3491] module 'deadtime_if' declared at 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:325' bound to instance 'dt_up' of component 'deadtime_if' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:276]
+INFO: [Synth 8-638] synthesizing module 'deadtime_if' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:335]
+INFO: [Synth 8-256] done synthesizing module 'deadtime_if' (4#1) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:335]
+INFO: [Synth 8-3491] module 'deadtime_if' declared at 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:325' bound to instance 'dt_un' of component 'deadtime_if' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:277]
+INFO: [Synth 8-3491] module 'deadtime_if' declared at 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:325' bound to instance 'dt_vp' of component 'deadtime_if' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:278]
+INFO: [Synth 8-3491] module 'deadtime_if' declared at 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:325' bound to instance 'dt_vn' of component 'deadtime_if' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:279]
+INFO: [Synth 8-3491] module 'deadtime_if' declared at 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:325' bound to instance 'dt_wp' of component 'deadtime_if' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:280]
+INFO: [Synth 8-3491] module 'deadtime_if' declared at 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:325' bound to instance 'dt_wn' of component 'deadtime_if' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:281]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dt_up'. This will prevent further optimization [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:276]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dt_un'. This will prevent further optimization [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:277]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dt_vp'. This will prevent further optimization [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:278]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dt_vn'. This will prevent further optimization [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:279]
+WARNING: [Synth 8-6014] Unused sequential element ad_current_reg was removed.  [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'pwm_if' (5#1) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:44]
+INFO: [Synth 8-3491] module 'peak_hold' declared at 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/new/peak_hold.vhd:29' bound to instance 'u_peak_hold' of component 'peak_hold' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/io_top.vhd:408]
+INFO: [Synth 8-638] synthesizing module 'peak_hold' [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/new/peak_hold.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'peak_hold' (6#1) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/new/peak_hold.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'io_top' (7#1) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/io_top.vhd:87]
+WARNING: [Synth 8-3848] Net EEP_SCL in module/entity mwpe4_ipfpga_top does not have driver. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/mwpe4_ipfpga_top.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'mwpe4_ipfpga_top' (8#1) [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/mwpe4_ipfpga_top.vhd:102]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[30]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[29]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[28]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[27]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[26]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[25]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[24]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[23]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[22]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[21]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[20]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[19]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[18]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[17]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[16]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[15]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[14]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[13]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[12]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[11]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[10]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[9]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[8]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[7]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[6]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[5]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[4]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[3]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[2]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[1]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[0]
+WARNING: [Synth 8-3331] design io_top has unconnected port nUSER_PSW1_IN
+WARNING: [Synth 8-3331] design io_top has unconnected port nUSER_PSW2_IN
+WARNING: [Synth 8-3331] design mwpe4_ipfpga_top has unconnected port EEP_SCL
+WARNING: [Synth 8-3331] design mwpe4_ipfpga_top has unconnected port EEP_SDA
+WARNING: [Synth 8-3331] design mwpe4_ipfpga_top has unconnected port CLK50M_2_IN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 419.504 ; gain = 158.320
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 419.504 ; gain = 158.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 419.504 ; gain = 158.320
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7k70tfbg676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/expert4_system_pin.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/expert4_system_pin.xdc:20]
+Finished Parsing XDC File [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/expert4_system_pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/expert4_system_pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mwpe4_ipfpga_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mwpe4_ipfpga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc]
+Finished Parsing XDC File [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mwpe4_ipfpga_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mwpe4_ipfpga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 761.316 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 761.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IBUFG => IBUF: 1 instances
+  PLLE2_BASE => PLLE2_ADV: 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 761.316 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 761.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 761.316 ; gain = 500.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbg676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 761.316 ; gain = 500.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 761.316 ; gain = 500.133
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/pwm_if.vhd:197]
+INFO: [Synth 8-5546] ROM "test_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pwm_carrier_b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pwm_u_ref_b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pwm_v_ref_b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pwm_w_ref_b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pwm_deadtime_b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pwm_gate_en_b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pwm_update_b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gpio_16_23_out_b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gpio_8_15_out_b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dout_out_data_b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_data_b" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 761.316 ; gain = 500.133
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 3     
+	   3 Input     16 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 6     
+	   2 Input      6 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 27    
+	               16 Bit    Registers := 18    
+	               14 Bit    Registers := 16    
+	               13 Bit    Registers := 9     
+	                8 Bit    Registers := 7     
+	                6 Bit    Registers := 4     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 41    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input     13 Bit        Muxes := 12    
+	  37 Input      6 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	  37 Input      1 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 50    
+	  25 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ad7357_if 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               14 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	  37 Input      6 Bit        Muxes := 1     
+	  37 Input      1 Bit        Muxes := 4     
+Module deadtime_if 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module pwm_if 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 3     
+	   3 Input     16 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 14    
+	               13 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+Module peak_hold 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 8     
+Module io_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 11    
+	               16 Bit    Registers := 4     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 14    
+	  25 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[30]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[29]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[28]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[27]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[26]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[25]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[24]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[23]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[22]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[21]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[20]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[19]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[18]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[17]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[16]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[15]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[14]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[13]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[12]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[11]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[10]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[9]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[8]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[7]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[6]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[5]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[4]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[3]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[2]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[1]
+WARNING: [Synth 8-3331] design pwm_if has unconnected port AD_SYNC_REF[0]
+WARNING: [Synth 8-3331] design io_top has unconnected port nUSER_PSW1_IN
+WARNING: [Synth 8-3331] design io_top has unconnected port nUSER_PSW2_IN
+WARNING: [Synth 8-3331] design mwpe4_ipfpga_top has unconnected port EEP_SCL
+WARNING: [Synth 8-3331] design mwpe4_ipfpga_top has unconnected port EEP_SDA
+WARNING: [Synth 8-3331] design mwpe4_ipfpga_top has unconnected port CLK50M_2_IN
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_error_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/sync_cnt_max_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_io_top/u_pwm_if/carrier_reset_cnt_reg[15] )
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_b_tmp_reg[13]' (FDE) to 'u_io_top/u_ad_6_7/ad_b_tmp_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_b_tmp_reg[13]' (FDE) to 'u_io_top/u_ad_2_3/ad_b_tmp_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_a_tmp_reg[13]' (FDE) to 'u_io_top/u_ad_6_7/ad_a_tmp_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_a_tmp_reg[13]' (FDE) to 'u_io_top/u_ad_2_3/ad_a_tmp_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_b_tmp_reg[13]' (FDE) to 'u_io_top/u_ad_4_5/ad_b_tmp_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_b_tmp_reg[13]' (FDE) to 'u_io_top/u_ad_0_1/ad_b_tmp_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_a_tmp_reg[13]' (FDE) to 'u_io_top/u_ad_4_5/ad_a_tmp_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_a_tmp_reg[13]' (FDE) to 'u_io_top/u_ad_0_1/ad_a_tmp_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_b_tmp_reg[14]' (FDE) to 'u_io_top/u_ad_6_7/ad_b_tmp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_b_tmp_reg[14]' (FDE) to 'u_io_top/u_ad_2_3/ad_b_tmp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_a_tmp_reg[14]' (FDE) to 'u_io_top/u_ad_6_7/ad_a_tmp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_a_tmp_reg[14]' (FDE) to 'u_io_top/u_ad_2_3/ad_a_tmp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_b_tmp_reg[14]' (FDE) to 'u_io_top/u_ad_4_5/ad_b_tmp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_b_tmp_reg[14]' (FDE) to 'u_io_top/u_ad_0_1/ad_b_tmp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_a_tmp_reg[14]' (FDE) to 'u_io_top/u_ad_4_5/ad_a_tmp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_a_tmp_reg[14]' (FDE) to 'u_io_top/u_ad_0_1/ad_a_tmp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_b_tmp_reg[15]' (FDE) to 'u_io_top/u_ad_6_7/ad_b_tmp_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_b_tmp_reg[15]' (FDE) to 'u_io_top/u_ad_2_3/ad_b_tmp_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_a_tmp_reg[15]' (FDE) to 'u_io_top/u_ad_6_7/ad_a_tmp_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_a_tmp_reg[15]' (FDE) to 'u_io_top/u_ad_2_3/ad_a_tmp_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_b_tmp_reg[15]' (FDE) to 'u_io_top/u_ad_4_5/ad_b_tmp_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_b_tmp_reg[15]' (FDE) to 'u_io_top/u_ad_0_1/ad_b_tmp_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_a_tmp_reg[15]' (FDE) to 'u_io_top/u_ad_4_5/ad_a_tmp_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_a_tmp_reg[15]' (FDE) to 'u_io_top/u_ad_0_1/ad_a_tmp_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_b_tmp_reg[16]' (FDE) to 'u_io_top/u_ad_6_7/ad_b_tmp_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_b_tmp_reg[16]' (FDE) to 'u_io_top/u_ad_2_3/ad_b_tmp_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_a_tmp_reg[16]' (FDE) to 'u_io_top/u_ad_6_7/ad_a_tmp_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_a_tmp_reg[16]' (FDE) to 'u_io_top/u_ad_2_3/ad_a_tmp_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_b_tmp_reg[16]' (FDE) to 'u_io_top/u_ad_4_5/ad_b_tmp_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_b_tmp_reg[16]' (FDE) to 'u_io_top/u_ad_0_1/ad_b_tmp_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_a_tmp_reg[16]' (FDE) to 'u_io_top/u_ad_4_5/ad_a_tmp_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_a_tmp_reg[16]' (FDE) to 'u_io_top/u_ad_0_1/ad_a_tmp_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_b_tmp_reg[17]' (FDE) to 'u_io_top/u_ad_6_7/ad_b_tmp_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_b_tmp_reg[17]' (FDE) to 'u_io_top/u_ad_2_3/ad_b_tmp_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_a_tmp_reg[17]' (FDE) to 'u_io_top/u_ad_6_7/ad_a_tmp_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_a_tmp_reg[17]' (FDE) to 'u_io_top/u_ad_2_3/ad_a_tmp_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_b_tmp_reg[17]' (FDE) to 'u_io_top/u_ad_4_5/ad_b_tmp_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_b_tmp_reg[17]' (FDE) to 'u_io_top/u_ad_0_1/ad_b_tmp_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_a_tmp_reg[17]' (FDE) to 'u_io_top/u_ad_4_5/ad_a_tmp_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_a_tmp_reg[17]' (FDE) to 'u_io_top/u_ad_0_1/ad_a_tmp_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_b_tmp_reg[18]' (FDE) to 'u_io_top/u_ad_6_7/ad_b_tmp_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_b_tmp_reg[18]' (FDE) to 'u_io_top/u_ad_2_3/ad_b_tmp_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_a_tmp_reg[18]' (FDE) to 'u_io_top/u_ad_6_7/ad_a_tmp_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_a_tmp_reg[18]' (FDE) to 'u_io_top/u_ad_2_3/ad_a_tmp_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_b_tmp_reg[18]' (FDE) to 'u_io_top/u_ad_4_5/ad_b_tmp_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_b_tmp_reg[18]' (FDE) to 'u_io_top/u_ad_0_1/ad_b_tmp_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_a_tmp_reg[18]' (FDE) to 'u_io_top/u_ad_4_5/ad_a_tmp_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_a_tmp_reg[18]' (FDE) to 'u_io_top/u_ad_0_1/ad_a_tmp_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_b_tmp_reg[19]' (FDE) to 'u_io_top/u_ad_6_7/ad_b_tmp_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_b_tmp_reg[19]' (FDE) to 'u_io_top/u_ad_2_3/ad_b_tmp_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_a_tmp_reg[19]' (FDE) to 'u_io_top/u_ad_6_7/ad_a_tmp_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_a_tmp_reg[19]' (FDE) to 'u_io_top/u_ad_2_3/ad_a_tmp_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_b_tmp_reg[19]' (FDE) to 'u_io_top/u_ad_4_5/ad_b_tmp_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_b_tmp_reg[19]' (FDE) to 'u_io_top/u_ad_0_1/ad_b_tmp_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_a_tmp_reg[19]' (FDE) to 'u_io_top/u_ad_4_5/ad_a_tmp_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_a_tmp_reg[19]' (FDE) to 'u_io_top/u_ad_0_1/ad_a_tmp_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_b_tmp_reg[20]' (FDE) to 'u_io_top/u_ad_6_7/ad_b_tmp_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_b_tmp_reg[20]' (FDE) to 'u_io_top/u_ad_2_3/ad_b_tmp_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_a_tmp_reg[20]' (FDE) to 'u_io_top/u_ad_6_7/ad_a_tmp_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_a_tmp_reg[20]' (FDE) to 'u_io_top/u_ad_2_3/ad_a_tmp_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_b_tmp_reg[20]' (FDE) to 'u_io_top/u_ad_4_5/ad_b_tmp_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_b_tmp_reg[20]' (FDE) to 'u_io_top/u_ad_0_1/ad_b_tmp_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_a_tmp_reg[20]' (FDE) to 'u_io_top/u_ad_4_5/ad_a_tmp_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_a_tmp_reg[20]' (FDE) to 'u_io_top/u_ad_0_1/ad_a_tmp_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_b_tmp_reg[21]' (FDE) to 'u_io_top/u_ad_6_7/ad_b_tmp_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_b_tmp_reg[21]' (FDE) to 'u_io_top/u_ad_2_3/ad_b_tmp_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_a_tmp_reg[21]' (FDE) to 'u_io_top/u_ad_6_7/ad_a_tmp_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_a_tmp_reg[21]' (FDE) to 'u_io_top/u_ad_2_3/ad_a_tmp_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_b_tmp_reg[21]' (FDE) to 'u_io_top/u_ad_4_5/ad_b_tmp_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_b_tmp_reg[21]' (FDE) to 'u_io_top/u_ad_0_1/ad_b_tmp_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_a_tmp_reg[21]' (FDE) to 'u_io_top/u_ad_4_5/ad_a_tmp_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_a_tmp_reg[21]' (FDE) to 'u_io_top/u_ad_0_1/ad_a_tmp_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_b_tmp_reg[22]' (FDE) to 'u_io_top/u_ad_6_7/ad_b_tmp_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_b_tmp_reg[22]' (FDE) to 'u_io_top/u_ad_2_3/ad_b_tmp_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_a_tmp_reg[22]' (FDE) to 'u_io_top/u_ad_6_7/ad_a_tmp_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_a_tmp_reg[22]' (FDE) to 'u_io_top/u_ad_2_3/ad_a_tmp_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_b_tmp_reg[22]' (FDE) to 'u_io_top/u_ad_4_5/ad_b_tmp_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_b_tmp_reg[22]' (FDE) to 'u_io_top/u_ad_0_1/ad_b_tmp_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_a_tmp_reg[22]' (FDE) to 'u_io_top/u_ad_4_5/ad_a_tmp_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_a_tmp_reg[22]' (FDE) to 'u_io_top/u_ad_0_1/ad_a_tmp_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_b_tmp_reg[23]' (FDE) to 'u_io_top/u_ad_6_7/ad_b_tmp_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_b_tmp_reg[23]' (FDE) to 'u_io_top/u_ad_2_3/ad_b_tmp_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_a_tmp_reg[23]' (FDE) to 'u_io_top/u_ad_6_7/ad_a_tmp_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_a_tmp_reg[23]' (FDE) to 'u_io_top/u_ad_2_3/ad_a_tmp_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_b_tmp_reg[23]' (FDE) to 'u_io_top/u_ad_4_5/ad_b_tmp_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_b_tmp_reg[23]' (FDE) to 'u_io_top/u_ad_0_1/ad_b_tmp_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_a_tmp_reg[23]' (FDE) to 'u_io_top/u_ad_4_5/ad_a_tmp_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_a_tmp_reg[23]' (FDE) to 'u_io_top/u_ad_0_1/ad_a_tmp_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_b_tmp_reg[24]' (FDE) to 'u_io_top/u_ad_6_7/ad_b_tmp_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_b_tmp_reg[24]' (FDE) to 'u_io_top/u_ad_2_3/ad_b_tmp_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_a_tmp_reg[24]' (FDE) to 'u_io_top/u_ad_6_7/ad_a_tmp_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_a_tmp_reg[24]' (FDE) to 'u_io_top/u_ad_2_3/ad_a_tmp_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_b_tmp_reg[24]' (FDE) to 'u_io_top/u_ad_4_5/ad_b_tmp_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_b_tmp_reg[24]' (FDE) to 'u_io_top/u_ad_0_1/ad_b_tmp_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_4_5/ad_a_tmp_reg[24]' (FDE) to 'u_io_top/u_ad_4_5/ad_a_tmp_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_0_1/ad_a_tmp_reg[24]' (FDE) to 'u_io_top/u_ad_0_1/ad_a_tmp_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_b_tmp_reg[25]' (FDE) to 'u_io_top/u_ad_6_7/ad_b_tmp_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_b_tmp_reg[25]' (FDE) to 'u_io_top/u_ad_2_3/ad_b_tmp_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_6_7/ad_a_tmp_reg[25]' (FDE) to 'u_io_top/u_ad_6_7/ad_a_tmp_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_io_top/u_ad_2_3/ad_a_tmp_reg[25]' (FDE) to 'u_io_top/u_ad_2_3/ad_a_tmp_reg[26]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 761.316 ; gain = 500.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|ad7357_if   | ad_sra     | 64x1          | LUT            | 
+|ad7357_if   | ad_clk     | 64x1          | LUT            | 
+|ad7357_if   | ad_sra     | 64x1          | LUT            | 
+|ad7357_if   | ad_clk     | 64x1          | LUT            | 
+|ad7357_if   | ad_sra     | 64x1          | LUT            | 
+|ad7357_if   | ad_clk     | 64x1          | LUT            | 
+|ad7357_if   | ad_clk     | 64x1          | LUT            | 
+|ad7357_if   | ad_sra     | 64x1          | LUT            | 
+|ad7357_if   | ad_clk     | 64x1          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 761.316 ; gain = 500.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 761.316 ; gain = 500.133
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 774.961 ; gain = 513.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 774.961 ; gain = 513.777
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 774.961 ; gain = 513.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 774.961 ; gain = 513.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 774.961 ; gain = 513.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 774.961 ; gain = 513.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 774.961 ; gain = 513.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |bp_if_top     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |bp_if_top_bbox_0 |     1|
+|2     |BUFG             |     5|
+|3     |CARRY4           |    87|
+|4     |LUT1             |    90|
+|5     |LUT2             |   202|
+|6     |LUT3             |    46|
+|7     |LUT4             |   199|
+|8     |LUT5             |    31|
+|9     |LUT6             |   163|
+|10    |MUXF7            |    14|
+|11    |PLLE2_BASE       |     1|
+|12    |FDRE             |  1063|
+|13    |FDSE             |   113|
+|14    |IBUF             |    36|
+|15    |IBUFG            |     1|
+|16    |IOBUF            |    37|
+|17    |OBUF             |    63|
+|18    |OBUFT            |     1|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+----------------+---------------+------+
+|      |Instance        |Module         |Cells |
++------+----------------+---------------+------+
+|1     |top             |               |  2240|
+|2     |  u_bp_if_wrap  |bp_if_wrap     |    94|
+|3     |  u_clk_gen     |clk_gen        |    14|
+|4     |  u_io_top      |io_top         |  1995|
+|5     |    u_ad_0_1    |ad7357_if      |   110|
+|6     |    u_ad_2_3    |ad7357_if_0    |   110|
+|7     |    u_ad_4_5    |ad7357_if_1    |   110|
+|8     |    u_ad_6_7    |ad7357_if_2    |   109|
+|9     |    u_peak_hold |peak_hold      |   219|
+|10    |    u_pwm_if    |pwm_if         |   782|
+|11    |      dt_up     |deadtime_if__3 |    53|
+|12    |      dt_un     |deadtime_if__4 |    53|
+|13    |      dt_vp     |deadtime_if__5 |    53|
+|14    |      dt_vn     |deadtime_if    |    53|
+|15    |      dt_wn     |deadtime_if__6 |    53|
+|16    |      dt_wp     |deadtime_if_3  |    53|
++------+----------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 774.961 ; gain = 513.777
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 774.961 ; gain = 171.965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 774.961 ; gain = 513.777
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/bp_if_top.edn]
+Finished Parsing EDIF File [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/sources_1/imports/new/bp_if_top.edn]
+INFO: [Netlist 29-17] Analyzing 144 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 788.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 39 instances were transformed.
+  IBUFG => IBUF: 1 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 37 instances
+  PLLE2_BASE => PLLE2_ADV: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+232 Infos, 74 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 788.398 ; gain = 540.547
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 788.398 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.runs/synth_1/mwpe4_ipfpga_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mwpe4_ipfpga_top_utilization_synth.rpt -pb mwpe4_ipfpga_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 19 15:34:14 2023...

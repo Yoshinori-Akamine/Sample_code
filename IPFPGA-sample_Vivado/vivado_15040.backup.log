@@ -1,0 +1,270 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr 19 15:30:55 2023
+# Process ID: 15040
+# Current directory: C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10068 C:\Users\WPT_Bench\Documents\IPFPGA-sample_Vivado\IPFPGA-sample.xpr
+# Log file: C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/vivado.log
+# Journal file: C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 736.230 ; gain = 117.848
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Apr 19 15:33:38 2023] Launched synth_1...
+Run output will be captured here: C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k70tfbg676-1
+INFO: [Netlist 29-17] Analyzing 143 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7k70tfbg676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/expert4_system_pin.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/expert4_system_pin.xdc:20]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/expert4_system_pin.xdc:20]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1631.043 ; gain = 546.508
+Finished Parsing XDC File [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/expert4_system_pin.xdc]
+Parsing XDC File [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[0]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[1]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[2]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[3]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[4]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[5]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[6]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[7]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[8]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[9]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[10]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[11]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[12]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[13]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[14]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[15]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[16]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[17]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[18]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[19]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[20]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[21]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[22]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[23]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[24]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[25]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[26]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[27]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[28]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[29]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[30]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_peak[31]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[0]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[1]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[2]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[3]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[4]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[5]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[6]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[7]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[8]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[9]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[10]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[11]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[12]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[13]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[14]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[15]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[16]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[17]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[18]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[19]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[20]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[21]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[22]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[23]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[24]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[25]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[26]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[27]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[28]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[29]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[30]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_1_data_crnt[31]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[0]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[1]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[2]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[3]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[4]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[5]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[6]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[7]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[8]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[9]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[10]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[11]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[12]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[13]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[14]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[15]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[16]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[17]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[18]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[19]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[20]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[21]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[22]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[23]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[24]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[25]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[26]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[27]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[28]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[29]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[30]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_crnt[31]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_peak[0]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:311]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_peak[1]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:311]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_peak[2]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:311]
+WARNING: [Vivado 12-507] No nets matched 'u_io_top/u_peak_hold/ad_0_data_peak[3]'. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:311]
+INFO: [Common 17-14] Message 'Vivado 12-507' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:311]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc:311]
+Finished Parsing XDC File [C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.srcs/constrs_1/imports/imports/user_pin.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1631.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 37 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 37 instances
+
+open_run: Time (s): cpu = 00:00:33 ; elapsed = 00:00:21 . Memory (MB): peak = 1660.652 ; gain = 586.918
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 4096 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list u_clk_gen/CLK100M_OUT ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {u_io_top/u_pwm_if/carrier_cnt[0]} {u_io_top/u_pwm_if/carrier_cnt[1]} {u_io_top/u_pwm_if/carrier_cnt[2]} {u_io_top/u_pwm_if/carrier_cnt[3]} {u_io_top/u_pwm_if/carrier_cnt[4]} {u_io_top/u_pwm_if/carrier_cnt[5]} {u_io_top/u_pwm_if/carrier_cnt[6]} {u_io_top/u_pwm_if/carrier_cnt[7]} {u_io_top/u_pwm_if/carrier_cnt[8]} {u_io_top/u_pwm_if/carrier_cnt[9]} {u_io_top/u_pwm_if/carrier_cnt[10]} {u_io_top/u_pwm_if/carrier_cnt[11]} {u_io_top/u_pwm_if/carrier_cnt[12]} {u_io_top/u_pwm_if/carrier_cnt[13]} {u_io_top/u_pwm_if/carrier_cnt[14]} {u_io_top/u_pwm_if/carrier_cnt[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u_io_top/u_pwm_if/sync_cnt_ref[0]} {u_io_top/u_pwm_if/sync_cnt_ref[1]} {u_io_top/u_pwm_if/sync_cnt_ref[2]} {u_io_top/u_pwm_if/sync_cnt_ref[3]} {u_io_top/u_pwm_if/sync_cnt_ref[4]} {u_io_top/u_pwm_if/sync_cnt_ref[5]} {u_io_top/u_pwm_if/sync_cnt_ref[6]} {u_io_top/u_pwm_if/sync_cnt_ref[7]} {u_io_top/u_pwm_if/sync_cnt_ref[8]} {u_io_top/u_pwm_if/sync_cnt_ref[9]} {u_io_top/u_pwm_if/sync_cnt_ref[10]} {u_io_top/u_pwm_if/sync_cnt_ref[11]} {u_io_top/u_pwm_if/sync_cnt_ref[12]} {u_io_top/u_pwm_if/sync_cnt_ref[13]} {u_io_top/u_pwm_if/sync_cnt_ref[14]} {u_io_top/u_pwm_if/sync_cnt_ref[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u_io_top/u_pwm_if/u_ref_b[0]} {u_io_top/u_pwm_if/u_ref_b[1]} {u_io_top/u_pwm_if/u_ref_b[2]} {u_io_top/u_pwm_if/u_ref_b[3]} {u_io_top/u_pwm_if/u_ref_b[4]} {u_io_top/u_pwm_if/u_ref_b[5]} {u_io_top/u_pwm_if/u_ref_b[6]} {u_io_top/u_pwm_if/u_ref_b[7]} {u_io_top/u_pwm_if/u_ref_b[8]} {u_io_top/u_pwm_if/u_ref_b[9]} {u_io_top/u_pwm_if/u_ref_b[10]} {u_io_top/u_pwm_if/u_ref_b[11]} {u_io_top/u_pwm_if/u_ref_b[12]} {u_io_top/u_pwm_if/u_ref_b[13]} {u_io_top/u_pwm_if/u_ref_b[14]} {u_io_top/u_pwm_if/u_ref_b[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list u_io_top/u_pwm_if/carrier_up_down ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list u_io_top/u_pwm_if/pwm_un_dt ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list u_io_top/u_pwm_if/pwm_up_dt ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list u_io_top/u_pwm_if/pwm_vn_dt ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list u_io_top/u_pwm_if/pwm_vp_dt ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list u_io_top/u_pwm_if/sync_cnt_reset_flag ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list u_io_top/u_pwm_if/sync_judge ]]
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1692.688 ; gain = 0.000
+launch_runs impl_1 -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1692.688 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1692.688 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1695.352 ; gain = 0.000
+[Wed Apr 19 15:36:48 2023] Launched impl_1...
+Run output will be captured here: C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Apr 19 15:39:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000018ccbb6a01
+set_property PROGRAM.FILE {C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.runs/impl_1/mwpe4_ipfpga_top.bit} [get_hw_devices xc7k70t_0]
+set_property PROBES.FILE {C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.runs/impl_1/mwpe4_ipfpga_top.ltx} [get_hw_devices xc7k70t_0]
+set_property FULL_PROBES.FILE {C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.runs/impl_1/mwpe4_ipfpga_top.ltx} [get_hw_devices xc7k70t_0]
+current_hw_device [get_hw_devices xc7k70t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k70t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k70t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+create_hw_cfgmem -hw_device [get_hw_devices xc7k70t_0] -mem_dev [lindex [get_cfgmem_parts {n25q128-3.3v-spi-x1_x2_x4}] 0]
+WARNING: [Labtoolstcl 44-349] No config mems found
+ERROR: [Labtools 27-2284] Part name cannot be empty
+set_property PROBES.FILE {C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.runs/impl_1/mwpe4_ipfpga_top.ltx} [get_hw_devices xc7k70t_0]
+set_property FULL_PROBES.FILE {C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.runs/impl_1/mwpe4_ipfpga_top.ltx} [get_hw_devices xc7k70t_0]
+set_property PROGRAM.FILE {C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.runs/impl_1/mwpe4_ipfpga_top.bit} [get_hw_devices xc7k70t_0]
+program_hw_devices [get_hw_devices xc7k70t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2635.082 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k70t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k70t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+create_hw_cfgmem -hw_device [get_hw_devices xc7k70t_0] -mem_dev [lindex [get_cfgmem_parts {n25q128-3.3v-spi-x1_x2_x4}] 0]
+WARNING: [Labtoolstcl 44-349] No config mems found
+ERROR: [Labtools 27-2284] Part name cannot be empty
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k70t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property PROBES.FILE {C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k70t_0]
+set_property FULL_PROBES.FILE {C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k70t_0]
+set_property PROGRAM.FILE {C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.runs/impl_1/mwpe4_ipfpga_top.bit} [get_hw_devices xc7k70t_0]
+program_hw_devices [get_hw_devices xc7k70t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2668.199 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k70t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k70t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+create_hw_cfgmem -hw_device [get_hw_devices xc7k70t_0] -mem_dev [lindex [get_cfgmem_parts {n25q128-3.3v-spi-x1_x2_x4}] 0]
+WARNING: [Labtoolstcl 44-349] No config mems found
+ERROR: [Labtools 27-2284] Part name cannot be empty
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k70t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Apr-19 15:42:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k70t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k70t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Apr-19 15:42:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 19 16:20:13 2023...

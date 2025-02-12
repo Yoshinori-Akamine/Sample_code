@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbg676-1" LaunchTime="1681886208">
+  <File Type="PA-TCL" Name="mwpe4_ipfpga_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="mwpe4_ipfpga_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="mwpe4_ipfpga_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="mwpe4_ipfpga_top.vds"/>
+  <File Type="RDS-UTIL" Name="mwpe4_ipfpga_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="mwpe4_ipfpga_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="mwpe4_ipfpga_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="mwpe4_ipfpga_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="mwpe4_ipfpga_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/bp_if_top.edn">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/sources_1/imports/new/bp_if_top.edn"/>
+        <Attr Name="ImportTime" Val="1484801154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ad7357_if.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/sources_1/imports/new/ad7357_if.vhd"/>
+        <Attr Name="ImportTime" Val="1485167478"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/bp_if_wrap.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/sources_1/imports/new/bp_if_wrap.vhd"/>
+        <Attr Name="ImportTime" Val="1484046497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/clk_gen.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/sources_1/imports/new/clk_gen.vhd"/>
+        <Attr Name="ImportTime" Val="1484041823"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/io_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/sources_1/imports/new/io_top.vhd"/>
+        <Attr Name="ImportTime" Val="1485150542"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/peak_hold.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/pwm_if.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/sources_1/imports/new/pwm_if.vhd"/>
+        <Attr Name="ImportTime" Val="1484041847"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/mwpe4_ipfpga_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/sources_1/imports/new/mwpe4_ipfpga_top.vhd"/>
+        <Attr Name="ImportTime" Val="1485310992"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mwpe4_ipfpga_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/imports/expert4_system_pin.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/constrs_1/imports/expert4_system_pin.xdc"/>
+        <Attr Name="ImportTime" Val="1479972134"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/imports/user_pin.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="Z:/constrs_1/imports/user_pin.xdc"/>
+        <Attr Name="ImportTime" Val="1479956145"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/imports/user_pin.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

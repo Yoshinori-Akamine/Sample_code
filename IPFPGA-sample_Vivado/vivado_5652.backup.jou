@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb  9 20:05:28 2022
+# Process ID: 5652
+# Current directory: C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15992 C:\Users\WPT_Bench\Documents\IPFPGA-sample_Vivado\IPFPGA-sample.xpr
+# Log file: C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/vivado.log
+# Journal file: C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.runs/impl_1/mwpe4_ipfpga_top.bit} [get_hw_devices xc7k70t_0]
+current_hw_device [get_hw_devices xc7k70t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k70t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7k70t_0] -mem_dev [lindex [get_cfgmem_parts {n25q128-3.3v-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k70t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k70t_0]
+set_property PROGRAM.FILE {C:/Users/WPT_Bench/Documents/IPFPGA-sample_Vivado/IPFPGA-sample.runs/impl_1/mwpe4_ipfpga_top.bit} [get_hw_devices xc7k70t_0]
+program_hw_devices [get_hw_devices xc7k70t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k70t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7k70t_0] -mem_dev [lindex [get_cfgmem_parts {n25q128-3.3v-spi-x1_x2_x4}] 0]
