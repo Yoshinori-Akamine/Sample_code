@@ -49,10 +49,10 @@ interrupt void write_to_fpga(void)
 
     // Write FPGA
     // 例：IPFPGA_write(BDN_FPGA, addr_variable, variable);
-    // IPFPGA_write(BDN_FPGA, addr_freq_cnt, freq_cnt);
-    // IPFPGA_write(BDN_FPGA, addr_uref, uref);
-    // IPFPGA_write(BDN_FPGA, addr_deadtime, dt);
-    // IPFPGA_write(BDN_FPGA, addr_enable, enable);
+    IPFPGA_write(BDN_FPGA, addr_freq_cnt, freq_cnt);
+    IPFPGA_write(BDN_FPGA, addr_uref, uref);
+    IPFPGA_write(BDN_FPGA, addr_deadtime, dt);
+    IPFPGA_write(BDN_FPGA, addr_enable, enable);
     // IPFPGA_write(BDN_FPGA, addr_Duty, Duty);
 }
 
