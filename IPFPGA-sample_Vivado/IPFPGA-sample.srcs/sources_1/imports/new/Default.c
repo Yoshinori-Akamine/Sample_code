@@ -27,7 +27,8 @@ volatile int enable = 1;         // 有効化
 
 // 計算専用の変数（内部計算のみで更新）
 int internal_variableA;
-float internal_variableB;  
+float internal_variableB;
+int uref;
 
 // 計算専用変数を再計算する関数
 // タイマーで定期的に呼び出す（割り込み）
@@ -36,6 +37,7 @@ void update_calculated_values(void)
   // 計算
   // 例：a = b + c;
   // 例：internal_variableA = variable * 100;
+  uref = freq_cnt / 2;
 }
 
 // FPGAに計算済みの値を書き込む関数
