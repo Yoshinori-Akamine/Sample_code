@@ -11,7 +11,7 @@
 1. プロジェクトファイルとか諸々1式を、これから作業をしようとするフォルダにコピペ。この際、手が加えられてないサンプルファイル/プロジェクトを利用（変なログとかが残ってないため）
 
 <p align="center">  
-<img src="Sample_codes.png">  
+<img src="fig/Sample_codes.png">  
 </p>  
 <p align="center"><strong>諸々1式のファイルたち</strong></p>
 
