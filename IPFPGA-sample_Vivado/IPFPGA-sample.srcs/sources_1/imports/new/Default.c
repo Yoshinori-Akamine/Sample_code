@@ -26,8 +26,8 @@ volatile int enable = 1;         // 有効化
 
 
 // 計算専用の変数（内部計算のみで更新）
-int internal_variableA;
-float internal_variableB;
+// int internal_variableA;
+// float internal_variableB;
 int uref;
 
 // 計算専用変数を再計算する関数
